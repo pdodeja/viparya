@@ -1,6 +1,6 @@
+"use strict";
 const express = require('express');
 const app = express();
-
 const helmet = require('helmet');
 
 
@@ -9,10 +9,11 @@ app.set('view engine', 'pug');
 app.use(helmet());
 app.use(express.static('public'))
 
-
-app.get('/', function (req, res) {
-  res.render('index', { title: 'Knowledge Empowers You', message: 'Hello there!' })
-})
+var config = {
+            title: "Knowledge Empowers You!!"
+            };
+//Routes
+require('./routes')(app, config);
 
 
 app.listen(3000, function () {
