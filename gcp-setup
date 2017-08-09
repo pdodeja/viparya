@@ -1,0 +1,9 @@
+Setting up Front-End Machine in google_compute_engine
+
+1.) Initialize VM using Ubuntu 1404
+2.) SSH using gcloud compute ssh projects/lustrous-method-161121/zones/us-central1-c/instances/frontend-vm
+3.) sudo apt-get update
+4.) sudo apt-get install nginx
+5.) configure nginx for ssl
+6.) Install Node
+7.) Insall git
